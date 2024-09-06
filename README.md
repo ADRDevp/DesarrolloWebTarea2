@@ -1,4 +1,6 @@
-# Hw1
+# Hw2
+
+Aparecen los anteriores commits de la tarea 1 pq se usaron estructuras similares, pero el mandato de Formulario con marca, modelo y carro se cumplio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
 
