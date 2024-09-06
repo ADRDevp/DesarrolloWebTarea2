@@ -1,32 +1,32 @@
 <div class="login-container">
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     
-    <!-- Campo para nombre -->
+    <!-- Campo para Modelo del carro -->
     <mat-form-field appearance="fill">
-      <mat-label>Nombre</mat-label>
-      <input matInput placeholder="Ingresa tu nombre" formControlName="nombre" required />
+      <mat-label>Modelo del carro</mat-label>
+      <input matInput placeholder="Ingresa el modelo del carro" formControlName="modelo" required />
     </mat-form-field>
 
-    <!-- Campo para apellido -->
+    <!-- Campo para Marca del carro -->
     <mat-form-field appearance="fill">
-      <mat-label>Apellido</mat-label>
-      <input matInput placeholder="Ingresa tu apellido" formControlName="apellido" required />
+      <mat-label>Marca del carro</mat-label>
+      <input matInput placeholder="Ingresa la marca del carro" formControlName="marca" required />
     </mat-form-field>
 
-    <!-- Género -->
-    <label>Género:</label>
-    <mat-radio-group formControlName="genero" aria-label="Selecciona tu género">
-      <mat-radio-button value="masculino">Masculino</mat-radio-button>
-      <mat-radio-button value="femenino">Femenino</mat-radio-button>
-      <mat-radio-button value="otro">Otro</mat-radio-button>
+    <!-- Tipo de carro -->
+    <label>Tipo de carro:</label>
+    <mat-radio-group formControlName="tipo" aria-label="Selecciona el tipo de carro">
+      <mat-radio-button value="sedan">Sedán</mat-radio-button>
+      <mat-radio-button value="suv">SUV</mat-radio-button>
+      <mat-radio-button value="camioneta">Camioneta</mat-radio-button>
     </mat-radio-group>
 
-    <!-- Fecha de nacimiento -->
+    <!-- Año del carro -->
     <mat-form-field appearance="fill">
-      <mat-label>Fecha de nacimiento</mat-label>
-      <input matInput [matDatepicker]="picker" formControlName="fechaNacimiento" required />
+      <mat-label>Año del carro</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="anio" required />
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-      <mat-datepicker #picker></mat-datepicker>
+      <mat-datepicker #picker startView="multi-year"></mat-datepicker>
     </mat-form-field>
 
     <!-- Botón de envío -->
